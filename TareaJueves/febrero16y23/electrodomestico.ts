@@ -85,4 +85,4 @@ const electrodomestico2: Electrodomestico = new Electrodomestico("helader",2000,
 console.log(electrodomestico1)
 console.log(electrodomestico2)
 
-console.log(electrodomestico1.calcBalance())
+//console.log(electrodomestico1.calcBalance())
