@@ -1,0 +1,41 @@
+Tarea de la filmina : https://lasfloresfullstack.slack.com/files/U04JM23UVDL/F04RFF4S1SR/react_intro_27_defebrero.pdf
+
+Ejercicios - En Clase
+
+Ejercicio 1: Exporta el componente
+• Este ejemplo interactivo no funciona porque el componente raíz no 
+está exportado: (Intenta arreglarlo)
+
+** Falta al final de codigo el : render <Profile/>, document.getElementByID("")
+
+
+
+Ejercicio 2: Arregla la sentencia de retorno
+
+• Este return no se ve muy bien, lo podes arreglar?
+
+**Al return le faltan los parentesis
+
+
+
+Ejercicio 3: Detectar el error
+
+** El nombre de la funcion se encuentra en minusculas al igual que cuando la llaman 
+
+
+
+
+Ejercicio 4: Crear tu propio componente
+Escribe un componente desde cero. Podes darle cualquier nombre 
+
+**function Form(){
+    return(
+        <form>
+            <label> nombre:</label>
+            <imput type="text" id="nombre" placeholder="nombre">
+            <buttom type="buttom">Enviar</buttom>
+        </form>
+    )
+}
+
+render <Form/>, document.getElementByID("sectionForm")
