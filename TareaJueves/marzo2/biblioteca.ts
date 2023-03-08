@@ -1,6 +1,4 @@
 import { Libros } from "./libros";
-import { SecAccion } from "./secAccion";
-
 
 class Biblioteca{
     private nombre:string;
@@ -84,7 +82,6 @@ const biblioteca:Biblioteca = new Biblioteca("biblioteca Rusa","en la esquina",2
 
 biblioteca.getInfoBiblioteca()
 
-//console.log(biblioteca.getLibros())
 
 biblioteca.buscadorLibros("crepusculo")
 
@@ -103,28 +100,3 @@ biblioteca.buscadorLibros("crepusculo")
 
 
 
-
-
-
-/*
-public setSecAccion(secAccion:SecAccion){
-    this.secAccion=secAccion;
-}
-public getSecAccion():SecAccion{
-    return this.secAccion
-}
-
-public setSecAventura(secAventura:SecAventura){
-    this.secAventura=secAventura;
-}
-public getSecAventura():SecAventura{
-    return this.secAventura
-}
-
-public setSecRomance(secRomance:SecRomance){
-    this.secRomance=secRomance;
-}
-public getSecRomance():SecRomance{
-    return this.secRomance
-}
-*/
