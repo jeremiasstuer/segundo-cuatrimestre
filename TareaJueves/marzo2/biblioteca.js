@@ -43,8 +43,12 @@ var Biblioteca = /** @class */ (function () {
         console.log("\n        Datos de la biblioteca\n        Nombre: ".concat(this.nombre, "\n        Direccion:").concat(this.direccion, "\n        Telefono:").concat(this.telefono, "\n        Localidad:").concat(this.localidad));
     };
     Biblioteca.prototype.buscadorLibros = function (nombre) {
-        var nombreLibros = libros.find(function (element) { return element.nombreLibro === nombre; });
-        console.log(nombreLibros === null || nombreLibros === void 0 ? void 0 : nombreLibros.autor);
+        var search = libros.map(function (element) { return element; });
+        search.forEach(function (element) {
+            if (element.nombreLibro === nombre) {
+                console.log(element);
+            }
+        });
     };
     return Biblioteca;
 }());
@@ -54,27 +58,4 @@ var libros = [new libros_1.Libros("moni", "harri poter", "pluma", "aventura"),
 ];
 var biblioteca = new Biblioteca("biblioteca Rusa", "en la esquina", 222222, "mi barrio", libros);
 biblioteca.getInfoBiblioteca();
-//console.log(biblioteca.getLibros())
-biblioteca.buscadorLibros("crepusculo");
-/*
-public setSecAccion(secAccion:SecAccion){
-    this.secAccion=secAccion;
-}
-public getSecAccion():SecAccion{
-    return this.secAccion
-}
-
-public setSecAventura(secAventura:SecAventura){
-    this.secAventura=secAventura;
-}
-public getSecAventura():SecAventura{
-    return this.secAventura
-}
-
-public setSecRomance(secRomance:SecRomance){
-    this.secRomance=secRomance;
-}
-public getSecRomance():SecRomance{
-    return this.secRomance
-}
-*/ 
+biblioteca.buscadorLibros("crepuculo");

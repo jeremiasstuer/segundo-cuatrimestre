@@ -1,5 +1,7 @@
 import { Libros } from "./libros";
 
+
+
 class Biblioteca{
     private nombre:string;
     private direccion:string;
@@ -64,8 +66,12 @@ class Biblioteca{
     }
 
     public buscadorLibros(nombre:string):void{
-        const buscaLibros =libros.find(element => element.nombreLibro === nombre)
-        console.log(buscaLibros?.nombreLibro)
+        const search =libros.map(element => element)   
+         search.forEach(element => {
+            if(element.nombreLibro === nombre){
+                console.log(element)
+            }
+         });
     }
 
 }
@@ -83,7 +89,7 @@ const biblioteca:Biblioteca = new Biblioteca("biblioteca Rusa","en la esquina",2
 biblioteca.getInfoBiblioteca()
 
 
-biblioteca.buscadorLibros("crepusculo")
+biblioteca.buscadorLibros("crepuculo")
 
 
 
