@@ -15,10 +15,10 @@ export class Juego{
         return this.apuestaMinima
     }
 
-    public setCantidadJUgadores(pCantidadJugadores:number):void{
+    public setCantidadJugadores(pCantidadJugadores:number):void{
         this.apuestaMinima = pCantidadJugadores
     }
-    public getCantidadJUgadores() : number {
+    public getCantidadJugadores() : number {
         return this.cantidadJugadores
     }
 
