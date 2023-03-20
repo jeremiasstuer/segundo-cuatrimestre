@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var futbolista_1 = require("./futbolista");
+var entrenador_1 = require("./entrenador");
+var masajista_1 = require("./masajista");
+var tipoMasajes_1 = require("./tipoMasajes");
+var tipoMasajes = new tipoMasajes_1.TipoMasajes("Muscular");
+var futbolista = new futbolista_1.Futbolista("Juan", "Carlos", 21021, 12.2, 10);
+var entrenador = new entrenador_1.Entrenador("Manuel", "Monzo", 12360, 2.02, 1);
+var masajista = new masajista_1.Masajista("Maria", "Ojota", 74125, 5.6, tipoMasajes);
+futbolista.getInfo();
+entrenador.getInfo();
+masajista.getInfo();

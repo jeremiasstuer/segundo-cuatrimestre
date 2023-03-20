@@ -28,7 +28,7 @@ export class Casino{
     public setDireccion(pdireccion:string):void{
         this.direccion = pdireccion
     }
-    public getDirecion() : string {
+    public getDireccion() : string {
         return this.direccion
     }
     public setLocalidad(plocalidad:string):void{
