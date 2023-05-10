@@ -1,0 +1,16 @@
+.contenedor-general{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+}
+
+
+.contenedor{
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 8px;
+}
