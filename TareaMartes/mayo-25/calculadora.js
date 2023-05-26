@@ -15,8 +15,10 @@ bNumb.forEach((boton)=>{
       pNum+=boton.innerText
       resultado.innerText = pNum
     }else{
+      
       dNum+=boton.innerText
       resultado.innerText = dNum
+      
     }
   })
 })
@@ -25,7 +27,7 @@ bOp.forEach((boton)=>{
   boton.addEventListener("click",function(){ 
       tipoOp = boton.innerText
       calcPantalla.innerText = `${pNum}${tipoOp}` 
-
+      dNum = []
   })
 })
 
@@ -58,9 +60,10 @@ clear.addEventListener("click",()=>{
 
 function calculadora( nUno, nDos,cb){
     calcPantalla.innerText =  `${pNum} ${tipoOp} ${dNum} =`   
-    resultado.innerText = cb(nUno,nDos)
-    pNum = resultado.innerText 
-    dNum =[]
+    let cuenta = cb(nUno,nDos)
+    resultado.innerText = cuenta
+    pNum = cuenta
+
 }
 
 const suma =  (nUno, nDos) => parseInt( nUno) + parseInt( nDos)
