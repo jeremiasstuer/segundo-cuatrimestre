@@ -71,8 +71,8 @@ function edit(id,){
         <input id="imgUrl" class="card-img-top" placeholder="New link image " >
         <div class="card-body">
         <input id="inpName" type="text" placeholder="New full name">
-        <input id="inpJob" type="text" placeholder="New job">
-        <div>
+        <input id="inpJobs" type="text" placeholder="New job">
+        </div>
         <div>
         <button id="btn${id}" type="button" class="btn btn-lg btn-success mt-1" onclick="upgrade(${id})" >Update</button>
         </div>
@@ -83,11 +83,8 @@ function edit(id,){
 function upgrade(id){
     let name = document.getElementById("inpName").value
     let url = document.getElementById("imgUrl").value
-    let job = document.getElementById("inpJob").value
-    if(name === ""  || url === "" || job === ""){
-        document.getElementById(`btn${id}`).style.backgroundColor="red"
-    }else{
-        
+    let job = document.getElementById("inpJobs").value
+    if(!name == " "  || !url == " " || !job == " "){
         let newUs = {
             name: name,
             avatar: url,
@@ -102,6 +99,10 @@ function upgrade(id){
         .then(res => res.json())
         .then(date => setTimeout(()=>{location.reload();},1))
         .catch(err =>console.log(err))
+        
+    }else{
+        document.getElementById(`btn${id}`).style.backgroundColor="red"
         }
+
 }
 
