@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contenedorG">
-      <div class="resultado">  
-        <div id="calculadoraPantalla"></div>
-        <p id="resultado">0</p>
+    <div class="principal">
+      <div class="cont-romano">
+        <h2 class="result-romano" id="numsTransform">...</h2>
+        <button class="num-romanos"   id="romanNums">Numeros Romanos</button>
+        
       </div>
-      <div class="calculadora" id="calculadora">
-        
-        <button  name="numb">7</button>
-        <button  name="numb">8</button>
-        <button  name="numb">9</button>
-        <button name="op">x</button>
+      <div class="contenedorG">
+        <div class="resultado">  
+          <div id="calculadoraPantalla"></div>
+          <p id="resultado">0</p>
+        </div>
+        <div class="calculadora" id="calculadora">
+          
+          <button class="btn-calc" name="numb">7</button>
+          <button class="btn-calc" name="numb">8</button>
+          <button class="btn-calc" name="numb">9</button>
+          <button class="btn-calc operadores" name="op">x</button>
 
-        <button  name="numb">4</button>
-        <button name="numb">5</button>
-        <button  name="numb">6</button>
-        <button name="op">-</button>
+          <button class="btn-calc" name="numb">4</button>
+          <button class="btn-calc" name="numb">5</button>
+          <button class="btn-calc" name="numb">6</button>
+          <button class="btn-calc operadores" name="op">-</button>
 
-        <button name="numb">1</button>
-        <button  name="numb">2</button>
-        <button  name="numb">3</button>
-        <button name="op">+</button>
-        
-        <button id="clear">C</button>
-        <button name="numb">0</button>
-        <button id="calcular">=</button>
-        <button name="op">/</button>
+          <button class="btn-calc" name="numb">1</button>
+          <button class="btn-calc" name="numb">2</button>
+          <button class="btn-calc" name="numb">3</button>
+          <button class="btn-calc operadores" name="op">+</button>
+          
+          <button class="btn-calc" id="clear">C</button>
+          <button class="btn-calc" name="numb">0</button>
+          <button class="btn-calc" id="calcular">=</button>
+          <button class="btn-calc operadores" name="op">/</button>
+        </div>
       </div>
     </div>
     <script src="./calculadora.js"></script>
