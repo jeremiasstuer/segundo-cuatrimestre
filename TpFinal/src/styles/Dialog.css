@@ -1,0 +1,64 @@
+.ulCompra{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.liCompra{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid beige;
+    margin: 5px;
+}
+
+
+.imgCompra{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.contFooter{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+
+.contBotonera{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.btnDialogCompra{
+    color: aliceblue;
+    font-weight:500;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #2588c3;
+    border:3px solid #207aad ;
+}
+
+.btnDialogCompra:hover{
+    background-color: #206f9c;
+}
+
+.totalPrice{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    
+}
+
+@media (max-width: 950px){
+    .btnDialogCompra{
+       width: 45%;
+       font-size: 12px;
+    }
+}
